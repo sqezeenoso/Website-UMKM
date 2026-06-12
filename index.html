@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nasi Pecel 16 - UMKM Nasi Pecel Tradisional Kota Madiun</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Nasi Pecel 16</h1>
+      <p>Rasakan Nikmatnya Nasi Pecel Tradisional dengan Bumbu Khas Kota Madiun</p>
+    </header>
+
+    <nav aria-label="Navigasi utama">
+      <button type="button" onclick="scrollToSection('home')">Home</button>
+      <button type="button" onclick="scrollToSection('menu')">Menu</button>
+      <button type="button" onclick="scrollToSection('about')">Tentang Kami</button>
+      <button type="button" onclick="scrollToSection('contact')">Kontak</button>
+    </nav>
+
+    <main>
+      <section class="hero" id="home" aria-label="Bagian utama Nasi Pecel 16">
+        <div class="hero-text">
+          <h2>Selamat Datang di Nasi Pecel 16 Madiun</h2>
+          <p>Kami menyediakan nasi pecel dengan cita rasa autentik, bahan segar, dan bumbu racikan turun-temurun.</p>
+          <button class="btn-order" type="button" onclick="alert('Terima kasih telah memesan Nasi Pecel 16 Kota Madiun!');">Pesan Sekarang</button>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80" alt="Sepiring nasi pecel dengan sayuran dan sambal" />
+        </div>
+      </section>
+
+      <section class="menu" id="menu" aria-label="Menu Nasi Pecel 16">
+        <h3>Menu Andalan Kami</h3>
+        <div class="menu-list">
+          <article class="menu-item" tabindex="0" aria-label="Nasi Pecel Original">
+            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=400&q=80" alt="Nasi Pecel Original" />
+            <div class="menu-content">
+              <h4 class="menu-title">Nasi Pecel Original</h4>
+              <p class="menu-desc">Nasi dengan sayur rebus segar, bumbu pecel khas, dan kerupuk.</p>
+              <div class="menu-price">Rp15.000,-</div>
+            </div>
+          </article>
+          <article class="menu-item" tabindex="0" aria-label="Nasi Pecel Telur">
+            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=400&q=80" alt="Nasi Pecel Telur" />
+            <div class="menu-content">
+              <h4 class="menu-title">Nasi Pecel Telur</h4>
+              <p class="menu-desc">Nasi pecel original ditambah telur rebus segar.</p>
+              <div class="menu-price">Rp18.000,-</div>
+            </div>
+          </article>
+          <article class="menu-item" tabindex="0" aria-label="Nasi Pecel Ayam Goreng">
+            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=400&q=80" alt="Nasi Pecel Ayam Goreng" />
+            <div class="menu-content">
+              <h4 class="menu-title">Nasi Pecel Ayam Goreng</h4>
+              <p class="menu-desc">Nasi pecel lengkap dengan ayam goreng renyah.</p>
+              <div class="menu-price">Rp25.000,-</div>
+            </div>
+          </article>
+          <article class="menu-item" tabindex="0" aria-label="Nasi Pecel Tempe Tahu">
+            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=400&q=80" alt="Nasi Pecel Tempe Tahu" />
+            <div class="menu-content">
+              <h4 class="menu-title">Nasi Pecel Tempe Tahu</h4>
+              <p class="menu-desc">Nasi pecel dengan tambahan tempe dan tahu goreng.</p>
+              <div class="menu-price">Rp20.000,-</div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" aria-label="Tentang Nasi Pecel 16" class="about">
+        <h3>Tentang Kami</h3>
+        <p>
+          Nasi Pecel 16 Kota Madiun adalah usaha mikro kecil menengah (UMKM) yang berdedikasi menghadirkan cita rasa nasi pecel tradisional dengan bahan-bahan segar dan resep turun-temurun. Kami berkomitmen menjaga kualitas dan kepuasan
+          pelanggan dengan pelayanan ramah dan harga terjangkau.
+        </p>
+      </section>
+
+      <section id="contact" aria-label="Kontak Nasi Pecel 16" class="contact">
+        <h3>Kontak Kami</h3>
+        <p>
+          <strong>Alamat:</strong> Jl. Pecel No.16, Kota Madiun, Jawa Timur<br />
+          <strong>Owner:</strong> Akbar Pradana<br />
+          <strong>Telepon:</strong> <a href="tel:+6281234567890">+62 822-5713-5050</a><br />
+          <strong>Email:</strong> <a href="mailto:info@nasipcel16.com">nasipcel16@gmail.com</a><br />
+          <strong>Instagram:</strong> <a href="https://instagram.com/nasipcel16" target="_blank" rel="noopener">@nasipcel16</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>&copy; 2025 Nasi Pecel 16 Kota Madiun.</footer>
+
+    <script>
+      function scrollToSection(id) {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    </script>
+  </body>
+</html>
